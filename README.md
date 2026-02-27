@@ -180,6 +180,9 @@ docker run --rm -p 3000:3000 --env-file ./backend/.env library-backend
 
 ### Frontend
 ```bash
-docker build -t library-frontend ./frontend
+docker build -t library-frontend ./frontend \
+  --build-arg VITE_API_BASE_URL=http://localhost:3000/api/v1 \
+  --build-arg VITE_SUPABASE_URL=https://your-project.supabase.co \
+  --build-arg VITE_SUPABASE_ANON_KEY=your-anon-key
 docker run --rm -p 8080:80 library-frontend
 ```
