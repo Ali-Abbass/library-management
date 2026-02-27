@@ -1,0 +1,16 @@
+.codex/
+.specify/
+specs/
+AGENTS.md
+node_modules/
+dist/
+build/
+coverage/
+*.log
+.env*
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
